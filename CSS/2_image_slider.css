@@ -1,0 +1,27 @@
+.maindiv{
+    width: 70%;
+    height: 400px;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -40%);
+    background-image: url(/Pictures/College_Fake.jpg);
+    background-size: 100% 100%;
+    box-shadow: 1px 1px 5px 5px rgb(155, 151, 151);
+    animation: infinite;
+    animation: slider 6s infinite linear;
+}
+
+@keyframes slider{
+    0%{ background-image: url(/Pictures/College_Fake.jpg); }
+    35%{ background-image: url(/Pictures/welcome.jpg); }
+    75%{ background-image: url(/Pictures/Computers.jpg); }
+    85%{ background-image: url(/Pictures/Labz.jpg);}
+}
+
+@media (max-width:991px) {
+    .maindiv{
+        width: 80%;
+        height: 250px;
+        transform: translate(-50%, -80%);
+    }
+}
